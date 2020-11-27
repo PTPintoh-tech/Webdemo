@@ -17,6 +17,8 @@
   <link rel="stylesheet" class="alternate-style" title="green" href="./css/skins/green.css" type="text/css" disabled>
   <link rel="stylesheet" href="./css/style-switcher.css" type="text/css">
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -71,14 +73,18 @@
       <section class="home section active bg-img" id="home">
         <div class="container">
           <div class="intro">
-            <img src="./images/about_B.jpg" alt="profile" class="shadow-dark">
-            <h1>Lorem ipsum</h1>
-            <p>Lorem ipsum dolor sit .</p>
+            <img src="./images/about_B.jpg" alt="profile" class="shadow-dark" data-aos="fade" data-aos-offset="200"
+              data-aos-delay="550" data-aos-duration="1000">
+            <h1 data-aos="fade" data-aos-offset="200" data-aos-delay="650" data-aos-duration="1000">Lorem ipsum</h1>
+            <p data-aos="fade" data-aos-offset="200" data-aos-delay="750" data-aos-duration="1000">Lorem ipsum dolor
+              sit .</p>
 
-            <div class="buttons padd-15">
+            <div class="buttons padd-15" data-aos="fade" data-aos-offset="200" data-aos-delay="850"
+              data-aos-duration="1000">
               <a href="#about" data-section-index="1" class="btn_2 padd-15 hire-me">Visitar</a>
             </div>
-            <div class="social-links">
+            <div class="social-links" data-aos="fade-up" data-aos-offset="200" data-aos-delay="800"
+              data-aos-duration="1000">
               <a href="#"><i class=" fa fa-twitter"></i></a>
               <a href="#"><i class=" fa fa-facebook"></i></a>
               <a href="#"><i class=" fa fa-instagram"></i></a>
@@ -238,7 +244,8 @@
           </div>
           <div class="row">
             <!-- Service Item-->
-            <div class="service-item padd-15">
+            <div class="service-item padd-15" data-aos="fade-up" data-aos-offset="200" data-aos-delay="550"
+              data-aos-duration="1000">
               <div class="service-item-inner">
                 <div class="icon"><i class="fa fa-user-md"></i></div>
                 <h4>Lorem, ipsum.</h4>
@@ -633,6 +640,11 @@
 
   <script src="./js/script.js"></script>
   <script src="./js/styleswitcher.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
 </body>
