@@ -21,31 +21,46 @@
 
 <body>
 
+
+  <!--Preloader-->
+  <div class="preloader">
+    <div class="loader">
+
+    </div>
+  </div>
+  <!--Preloader END-->
+
   <!-- Main Container -->
   <div class="main-container">
     <!-- Aside -->
     <div class="aside">
-      <!-- Logo-->
-      <div class="logo">
-        <a href="#">LOGO</a>
-      </div>
       <!-- NAV TOGGLER btn-->
       <div class="nav-toggler">
         <span></span>
       </div>
+      <div class="aside-inner">
+        <!-- Logo-->
+        <div class="logo">
+          <a href="#">LOGO</a>
+        </div>
+        <!-- NAV TOGGLER btn-->
+        <!-- <div class="nav-toggler">
+          <span></span>
+        </div>-->
 
-      <!-- NAV-->
-      <ul class="nav">
-        <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
-        <li><a href="#about"><i class="fa fa-user-md"></i>Sobre nós</a></li>
-        <li><a href="#services"><i class="fa fa-hospital-o"></i>Serviços</a></li>
-        <li><a href="#portfolio"><i class="fa fa-picture-o"></i>Galeria</a></li>
-        <li><a href="#blog"><i class="fa fa-info-circle"></i>Informações</a></li>
-        <li><a href="#contact"><i class="fa fa-tty"></i>Contactos</a></li>
-      </ul>
-      <!-- Copyright-->
-      <div class="copyright-text">
-        &copy;2020 Copyright
+        <!-- NAV-->
+        <ul class="nav">
+          <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+          <li><a href="#about"><i class="fa fa-user-md"></i>Sobre nós</a></li>
+          <li><a href="#services"><i class="fa fa-hospital-o"></i>Serviços</a></li>
+          <li><a href="#portfolio"><i class="fa fa-picture-o"></i>Galeria</a></li>
+          <li><a href="#blog"><i class="fa fa-info-circle"></i>Informações</a></li>
+          <li><a href="#contact"><i class="fa fa-tty"></i>Contactos</a></li>
+        </ul>
+        <!-- Copyright-->
+        <div class="copyright-text">
+          &copy;2020 Copyright
+        </div>
       </div>
     </div>
     <!-- Aside END-->
@@ -61,8 +76,7 @@
             <p>Lorem ipsum dolor sit .</p>
 
             <div class="buttons padd-15">
-              <a href="#portfolio" class="btn_2">Visitar</a>
-
+              <a href="#about" data-section-index="1" class="btn_2 padd-15 hire-me">Visitar</a>
             </div>
             <div class="social-links">
               <a href="#"><i class=" fa fa-twitter"></i></a>
@@ -110,7 +124,8 @@
                 <div class="skills padd-15">
                   <div class="row">
                     <img src="./images/planta.png" alt="Nature" class="responsive" width="600" height="400">
-                    <a href="/index.html#portfolio" class="btn_2 padd-15" style="margin-left: 33%;">Galeria</a>
+                    <a href="#portfolio" data-section-index="1" class="btn_2 padd-15 hire-me"
+                      style="margin-left: 33%;">Galeria</a>
                   </div>
                 </div>
               </div>
@@ -248,9 +263,7 @@
               <div class="service-item-inner">
                 <div class="icon"><i class="fa fa-user-md"></i></div>
                 <h4>Lorem, ipsum.</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, odit ipsum. Ipsa vel voluptates in
-                  magni enim odio, quis mollitia inventore praesentium ea ab optio exercitationem delectus ipsum beatae
-                  adipisci?</p>
+                <p>Lorem ipsum </p>
               </div>
             </div>
             <!-- Service Item END-->

@@ -212,6 +212,64 @@ select {
     display: none !important;
 }
 
+.preloader {
+    background-color: #222222;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 150;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.preloader.opacity-0 {
+    opacity: 0;
+}
+
+.preloader .loader {
+    height: 40px;
+    width: 40px;
+    border: 4px solid #e3e3e3;
+    border-radius: 50%;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
 /*Aside*/
 .aside {
     width: 270px;
@@ -220,11 +278,20 @@ select {
     height: 100%;
     left: 0;
     top: 0;
-    z-index: 10;
+    z-index: 11;
     border-right: 1px solid #393939;
-    padding: 30px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+}
+
+.aside .aside-inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    overflow-y: auto;
 }
 
 .aside .logo {
@@ -654,6 +721,7 @@ select {
     text-align: center;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 .service .service-item .service-item-inner:hover {
@@ -1002,12 +1070,15 @@ select {
     flex: 0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 30px;
+    display: flex;
 }
 
 .blog .blog-item-inner {
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid #393939;
+    width: 100%;
+    background-color: #212529;
 }
 
 .blog .blog-item-inner .blog-img {
@@ -1040,7 +1111,8 @@ select {
 
 .blog .blog-item-inner .blog-info {
     padding: 30px 15px;
-    background-color: #212529;
+
+
 }
 
 .blog .blog-item-inner .blog-info .blog-title {

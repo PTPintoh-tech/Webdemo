@@ -1,6 +1,11 @@
 /* RESPONSIVE*/
 
 @media (max-width: 1199px) {
+
+    .section .container {
+        padding-top: 70px;
+    }
+
     .aside .nav-toggler {
         display: -ms-flexbox;
         display: flex;
